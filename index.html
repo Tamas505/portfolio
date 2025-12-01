@@ -1,0 +1,142 @@
+
+
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <title>Kőműves Tamás – Webfejlesztő portfólió</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="avatar-circle">T</div>
+        <div>
+          <h1>Kőműves Tamás</h1>
+          <p>frontend / webfejlesztő tanuló</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">Rólam</a>
+        <a href="#projects">Projektek</a>
+        <a href="#contact">Kapcsolat</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Portfólióm – első lépések egy új szakma felé</h2>
+          <p>
+            Webfejlesztést tanulok, és ez az oldal az utam mérföldköveit gyűjti egybe.
+            Szeretem a letisztult, hangulatos felületeket és a tiszta, átlátható kódot.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">Nézd meg a projektjeimet</a>
+            <a href="#contact" class="btn ghost">Írj nekem</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container section-inner">
+        <h3 class="section-title">Rólam</h3>
+        <p class="about-text">
+          56 évesen kezdtem el komolyabban foglalkozni a webfejlesztéssel. 
+          A HTML / CSS alapoktól indulva eljutottam az Angularig, és folyamatosan
+          tanulok, gyakorlok. Célom, hogy olyan projekteket készítsek, amelyek
+          egyszerre szépek, használhatóak és jól átlátható kóddal épülnek fel.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <h3 class="section-title">Projektek</h3>
+        <div class="projects-grid">
+
+          <!-- Studio Zen Café -->
+          <article class="project-card">
+            <h4>Studio Zen Café</h4>
+            <p class="project-meta">Statikus weboldal • HTML / CSS</p>
+            <p class="project-desc">
+              Egy hangulatos, bohém kávézó fiktív weboldala. 
+              A cél a tipográfia, színek és elrendezés gyakorlása volt, 
+              valamint egy nyugodt, “zen” hangulatú hero-szekció megtervezése.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Reszponzív design</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn small primary" href="https://tamas505.github.io/studio-zen-cafe/" target="_blank" rel="noopener">
+                Live demo
+              </a>
+              <a class="btn small ghost" href="https://github.com/Tamas505/studio-zen-cafe" target="_blank" rel="noopener">
+                Kód GitHubon
+              </a>
+            </div>
+          </article>
+
+          <!-- Angular Registration Form -->
+          <article class="project-card">
+            <h4>Angular Registration Form</h4>
+            <p class="project-meta">Single Page App • Angular / TypeScript</p>
+            <p class="project-desc">
+              Egyszerű regisztrációs űrlap Angularban, kliens oldali validációval. 
+              A projekt célja az Angular alapjainak, az űrlapkezelésnek és a 
+              hibakezelésnek a gyakorlása volt.
+            </p>
+            <div class="tags">
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>Form validation</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn small primary" href="https://tamas505.github.io/angular-registration-form/" target="_blank" rel="noopener">
+                Live demo
+              </a>
+              <a class="btn small ghost" href="https://github.com/Tamas505/angular-registration-form" target="_blank" rel="noopener">
+                Kód GitHubon
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container section-inner">
+        <h3 class="section-title">Kapcsolat</h3>
+        <p class="about-text">
+          Ha szeretnél velem együtt dolgozni, vagy szívesen adnál visszajelzést a munkáimra,
+          írj bátran e-mailt:
+        </p>
+        <p class="contact-email">
+          <a href="mailto:fractal5055@gmail.com">fractal5055@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kőműves Tamás – webfejlesztő tanuló</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
